@@ -16,13 +16,14 @@ import json
 import global3
 import sys
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
+sys.path.append("/home/ec2-user/Python-3.4.2/crawlpy")
+sys.path.insert(0, '.')
 errmsg = ""
 
 def test():
     
     index = 0
-    for filename in os.listdir("/scrape_cafe24"):
+    for filename in os.listdir("./scrape_cafe24"):
         if index != 0 :
             t = multiprocessing.Process(target=go, args=(filename,))
             t.start()

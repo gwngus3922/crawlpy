@@ -41,7 +41,7 @@ def test():
     # res = await loop.run_in_executor(None,os.system,"python3 ./scrape/"+urls[idx])
     
 def go(idx):
-    msg = os.system("python3 ./scrape_cafe24/"+idx)
+    msg = os.system("python3" nowpath+"/scrape_cafe24/"+idx)
     # print(msg)
     print(idx)
     # print("오잉")

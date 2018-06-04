@@ -15,7 +15,6 @@ from urllib.error import HTTPError
 import urllib3
 import json
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-sys.path.append()
 sys.path.insert(0, '..')
 # cafe24
 # 특이사항

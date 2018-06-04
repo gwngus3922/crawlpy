@@ -19,6 +19,7 @@ import global3
     
 global3.test()
 def httpconnect(crawl,category,shopname):
+    mallpk = ""
     for i in global3.listshop:
                 
         if i["MallName"] == shopname:

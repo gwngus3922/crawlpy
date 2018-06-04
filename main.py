@@ -15,11 +15,12 @@ import urllib3
 import json
 import global3
 import sys
+import inspect
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 sys.path.append("/home/ec2-user/Python-3.4.2/crawlpy")
-print(sys.path)
-nowpath = os.getcwd()
+print(os.path.dirname(global3.__file__))
+nowpath = os.path.dirname(global3.__file__)
 sys.path.insert(0, '.')
 errmsg = ""
 

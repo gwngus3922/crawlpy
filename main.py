@@ -28,6 +28,7 @@ def test():
     
     index = 0
     for filename in os.listdir(nowpath+"/scrape_cafe24"):
+        print(filename)
         if index != 0 :
             t = multiprocessing.Process(target=go, args=(filename,))
             t.start()

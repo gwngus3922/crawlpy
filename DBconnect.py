@@ -35,8 +35,8 @@ def httpconnect(crawl,shopname):
     resp = urllib.request.urlopen(req)
     try:
         pyt_dict = json.loads(resp.read().decode("utf-8").encode("utf-8").decode('unicode-escape'))
-        print(crawl["prpk"])
-        print(pyt_dict["Product_List"])
+        # print(crawl["prpk"])
+        # print(pyt_dict["Product_List"])
         for idx,i in enumerate(crawl["prpk"]):
             i = 1
             

@@ -29,10 +29,10 @@ addurl = "product/list.html?cate_no=" #바꿔
 pageurl = "&page=" #바꿔
 # 
 # 
-# ,"26","42","43","44","46","82"
-# ,"Outer","Top","Bottom","Dress","Shoes & Acc","Sale"
-indexcate = ["25"]
-category = ["New Arrivals"]
+# 
+# 
+indexcate = ["25","26","42","43","44","46","82"]
+category = ["New Arrivals","Outer","Top","Bottom","Dress","Shoes & Acc","Sale"]
 num = 0
 #바꿔
 

@@ -15,7 +15,7 @@ from urllib.error import HTTPError
 import urllib3
 import json
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
+sys.path.append()
 sys.path.insert(0, '..')
 # cafe24
 # 특이사항
@@ -24,6 +24,7 @@ import global3
 import DBconnect
 # socks.set_default_proxy(socks.SOCKS5,"lcalhost",9150)
 # socket.socket = socks.socksocketo
+shopname = "뉴먼"
 basicurl = "http://www.newomen.co.kr/" #바꿔
 addurl = "product/list.html?cate_no=" #바꿔
 pageurl = "&page=" #바꿔
@@ -288,7 +289,7 @@ for i,val in enumerate(category):
         maingo(basicurl,val,indexcate[i])
         # time.sleep(1)
     
-DBconnect.httpconnect(crawl,category)
+DBconnect.httpconnect(crawl,category,shopname)
     # conn = httplib ("test.moamoa.co.kr/crawl/v1/check_shop.php")
     # conn.request("POST", "" , data,)
     # response = conn.getresponse()

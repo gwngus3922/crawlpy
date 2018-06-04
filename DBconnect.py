@@ -21,7 +21,7 @@ global3.test()
 def httpconnect(crawl,category,shopname):
     for i in global3.listshop:
                 
-        if i["MallName"] == "비바문":
+        if i["MallName"] == shopname:
             print("발견!")
             mallpk = i["MallPK"]
 

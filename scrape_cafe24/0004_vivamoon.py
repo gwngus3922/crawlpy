@@ -284,7 +284,7 @@ for i,val in enumerate(category):
         maingo(basicurl,val,indexcate[i])
         # time.sleep(1)
     
-DBconnect.httpconnect(crawl,category,shopname)
+DBconnect.httpconnect(crawl,shopname)
     # conn = httplib ("test.moamoa.co.kr/crawl/v1/check_shop.php")
     # conn.request("POST", "" , data,)
     # response = conn.getresponse()

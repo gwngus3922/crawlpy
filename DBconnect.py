@@ -18,11 +18,11 @@ import global3
 
     
 global3.test()
-def httpconnect(crawl,category,shopname2):
+def httpconnect(crawl,shopname):
     mallpk = ""
     for i in global3.listshop:
                 
-        if i["MallName"] == shopname2:
+        if i["MallName"] == shopname:
             print("발견!")
             mallpk = i["MallPK"]
 

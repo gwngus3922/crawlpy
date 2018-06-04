@@ -254,5 +254,5 @@ for i,val in enumerate(category):
     print(i)
     main(basicurl,val,indexcate[i])
     # time.sleep(1)
-DBconnect.httpconnect(crawl,category,shopname)
+DBconnect.httpconnect(crawl,shopname)
 # db넣는 구문

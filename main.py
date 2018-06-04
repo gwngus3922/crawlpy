@@ -14,6 +14,8 @@ from urllib.error import HTTPError
 import urllib3
 import json
 import global3
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 errmsg = ""
 

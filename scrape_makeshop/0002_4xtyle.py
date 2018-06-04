@@ -21,7 +21,7 @@ import DBconnect
 
 # socks.set_default_proxy(socks.SOCKS5,"lcalhost",9150)
 # socket.socket = socks.socksocketo
-
+shopname= "폭스타일"
 basicurl = "http://www.4xtyle.com/"
 addurl = "shop/shopbrand.html?xcode=" 
 pageurl = "&page=" 
@@ -254,5 +254,5 @@ for i,val in enumerate(category):
     print(i)
     main(basicurl,val,indexcate[i])
     # time.sleep(1)
-DBconnect.httpconnect(crawl,category)
+DBconnect.httpconnect(crawl,category,shopname)
 # db넣는 구문
